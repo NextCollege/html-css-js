@@ -1,0 +1,10 @@
+:root {
+  --shadow-color: 286deg 36% 47%;
+  --shadow: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.83),
+  8px 16.1px 22.1px -0.9px hsl(var(--shadow-color) / 1),
+  32px 64px 88px -1.8px hsl(var(--shadow-color) / 1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}

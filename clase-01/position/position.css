@@ -1,0 +1,36 @@
+body {
+  height: 300vh;
+}
+
+.section {
+  background: rgb(146, 104, 104);
+  position: relative;
+  color: #fff;
+  height: 18.75rem;
+  width: 25rem;
+  padding: 2.5rem;
+}
+
+.section__paragraph {
+  top: 1.25rem;
+  left: 0.25rem;
+  position: absolute;
+  background: rgb(17, 117, 17);
+  margin: 0;
+}
+
+.contact {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: green;
+  color: #fff;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.sticky {
+  position: sticky;
+  top: 2.5rem;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nombre de la pagina</title>
+    <link rel="icon" href="./favicon.svg" />
+  </head>
+  <body>
+    <h2>Contenido</h2>
+    <a href="./formularios.html">Formularios</a>
+
+    <hr />
+
+    <!-- El atributo target sirve para indicar donde abrir el enlace -->
+    <a
+      href="https://meet.google.com/bwn-wdxa-kyc?pli=1"
+      target="_blank"
+      title="este es un link"
+      >link</a
+    >
+
+    <!-- 
+      El atributo alt sirve para indicar un texto alternativo a la imagen
+      El atributo height sirve para indicar la altura de la imagen
+      El atributo width sirve para indicar el ancho de la imagen
+
+      Tip: El formato webp es un formato de imagen menos pesasa y mejor optimizada para la web
+    -->
+    <img
+      src="./big-image.webp"
+      alt="bosque con un lago"
+      height="300"
+      width="500"
+    />
+
+    <!--
+      El atributo src sirve para indicar la ruta del video
+      El atributo muted sirve para indicar si el video se reproduce sin sonido
+      El atributo controls sirve para indicar si el video tiene controles
+      El atributo poster sirve para indicar la ruta de la imagen que se muestra antes de reproducir el video
+    -->
+    <video
+      src="./video-example.mp4"
+      muted
+      controls
+      poster="./thumbnail.webp"
+      height="300"
+      width="500"
+    ></video>
+
+    <figure>
+      <img
+        src="./big-image.webp"
+        alt="bosque con un lago"
+        height="300"
+        width="500"
+      />
+      <figcaption>este es el bosque del que se habla en el articulo</figcaption>
+    </figure>
+
+    <!-- 
+      Para escribir encabezados se usan las etiquetas h1, h2, h3, h4, h5, h6
+      Nota: Solo puede haber un h1 por pagina
+     -->
+
+    <h1>Titulo principal</h1>
+
+    <div style="border: 1px solid red">
+      <h2>Titulo secundario</h2>
+
+      <!-- 
+        La etiqueta p sirve para escribir cualquier contenido de texto
+        Nota: La etiqueta span sirve para darle estilos a una parte del texto
+       -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        voluptatum, quibusdam,
+        <span style="color: red">uia, quae voluptatem</span> quod voluptas quos
+        reprehenderit quidem voluptate quas. Quisquam voluptatum, quibusdam,
+        quia, quae voluptatem quod voluptas quos reprehenderit quidem voluptate
+        quas.
+      </p>
+    </div>
+
+    <details>
+      <summary>Titulo del detalle</summary>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatum, quibusdam, quia, quae voluptatem quod voluptas quos
+          reprehenderit quidem voluptate quas. Quisquam voluptatum, quibusdam,
+          quia, quae voluptatem quod voluptas quos reprehenderit quidem
+          voluptate quas.
+        </p>
+        <img
+          src="./big-image.webp"
+          alt="bosque con un lago"
+          height="300"
+          width="500"
+        />
+      </div>
+    </details>
+    <details open>
+      <summary>Segundo</summary>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatum, quibusdam, quia, quae voluptatem quod voluptas quos
+          reprehenderit quidem voluptate quas. Quisquam voluptatum, quibusdam,
+          quia, quae voluptatem quod voluptas quos reprehenderit quidem
+          voluptate quas.
+        </p>
+        <img
+          src="./big-image.webp"
+          alt="bosque con un lago"
+          height="300"
+          width="500"
+        />
+      </div>
+    </details>
+    <details>
+      <summary>Tercero</summary>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatum, quibusdam, quia, quae voluptatem quod voluptas quos
+          reprehenderit quidem voluptate quas. Quisquam voluptatum, quibusdam,
+          quia, quae voluptatem quod voluptas quos reprehenderit quidem
+          voluptate quas.
+        </p>
+        <img
+          src="./big-image.webp"
+          alt="bosque con un lago"
+          height="300"
+          width="500"
+        />
+      </div>
+    </details>
+
+    <script></script>
+  </body>
+</html>

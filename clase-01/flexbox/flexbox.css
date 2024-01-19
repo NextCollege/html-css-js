@@ -1,0 +1,19 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 2rem;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: rgb(199, 164, 164);
+  width: 6.25rem;
+  height: 6.25rem;
+  font-size: 3rem;
+  font-weight: 700;
+}

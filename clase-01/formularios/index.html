@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Formulario de contacto</legend>
+        <label for="name">Nombre:</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Escribe tu nombre"
+          value="Pepito"
+          required
+          readonly
+        />
+        <label for="name">Apellido:</label>
+        <input
+          id="lastname"
+          type="text"
+          placeholder="Escribe tus apellidos"
+          required
+        />
+      </fieldset>
+
+      <input type="email" required placeholder="escribe tu correo" />
+
+      <hr />
+
+      <label for="opcion1">opcion 1</label>
+      <input id="opcion1" type="checkbox" />
+
+      <label for="opcion2">opcion 2</label>
+      <input id="opcion2" type="checkbox" checked />
+
+      <label for="opcion3">opcion 3</label>
+      <input id="opcion3" type="checkbox" />
+
+      <hr />
+
+      <label for="opcion1">opcion 1</label>
+      <input id="opcion1" type="radio" name="opcion1" />
+
+      <label for="opcion2">opcion 2</label>
+      <input id="opcion2" type="radio" name="opcion1" checked />
+
+      <hr />
+
+      <h2>Otros tipos de input</h2>
+      <input type="number" />
+      <input type="date" />
+      <input type="range" min="5" max="20" />
+
+      <hr />
+
+      <select>
+        <optgroup label="sudamerica">
+          <option value="1">peru</option>
+          <option value="2">colombia</option>
+          <option value="3">brasil</option>
+        </optgroup>
+        <optgroup label="europa">
+          <option value="1">italia</option>
+          <option value="2">francia</option>
+          <option value="3">espania</option>
+        </optgroup>
+      </select>
+
+      <textarea cols="100" rows="50"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

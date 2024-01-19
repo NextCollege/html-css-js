@@ -1,0 +1,35 @@
+h1 {
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
+
+.subtitle {
+  color: green;
+}
+
+#main {
+  color: aqua;
+}
+
+a[href="www.google.com"].active .resaltado {
+  color: blue
+}
+
+a .resaltado {
+  color: red;
+}
+
+a[href^="www.google.com"] {
+  color: red
+}
+
+a[href$=".pe"] {
+  color: green
+}
+
+a[href*="ogle"] {
+  color: chocolate
+}

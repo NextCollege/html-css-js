@@ -1,0 +1,13 @@
+.section {
+  color: cadetblue;
+  font-size: 1.5rem;
+}
+
+.section__paragraph {
+  color: crimson;
+  font-size: 2em;
+}
+
+.section__div {
+  font-size: 1.875rem;
+}
