@@ -1,0 +1,24 @@
+.button {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-200);
+  background: var(--gray-200);
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.button--red, .button--ghost.button--red:hover {
+  background: var(--red-600);
+  border-color: var(--red-600);
+  color: var(--gray-200);
+}
+
+.button--ghost {
+  background: transparent;
+  color: var(--gray-200);
+}
+
+.button--ghost.button--red {
+  color: var(--red-600);
+}

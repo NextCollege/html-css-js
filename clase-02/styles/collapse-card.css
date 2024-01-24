@@ -1,0 +1,12 @@
+.collapse-card {
+  padding: 0.5rem;
+  background: var(--blue-400);
+  border-radius: 0.5rem;
+}
+
+.collapse-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}

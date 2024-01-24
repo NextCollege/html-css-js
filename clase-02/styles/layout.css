@@ -1,0 +1,35 @@
+.layout {
+  height: 100vh;
+  /*
+    - Creamos contendor grid para poder crear columnas y filas
+    - Definiendo la cantidad y el tamaño de las columnas y filas
+  */
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+
+  /* 
+    Para tener control sobre la ubicacion de los "grid items"
+    usaremos la propiedad "grid-template-areas" para distribuirlos
+    de forma declarativa
+  */
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+
+/* 
+  Con la propiedad "grid-area" definimos cada area de nuestro layout
+*/
+
+.layout__header {
+  grid-area: header;
+}
+
+.layout__sidebar {
+  grid-area: sidebar;
+}
+
+.layout__main {
+  grid-area: main;
+}

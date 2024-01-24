@@ -1,0 +1,5 @@
+.sidebar-divider {
+  border-color: var(--gray-200);
+  opacity: 0.3;
+  margin: 1rem 0;
+}

@@ -1,0 +1,44 @@
+.sidebar-collapse {
+  color: var(--gray-200);
+}
+
+.sidebar-collapse__button {
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.sidebar-collapse__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar-collapse__content {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar-collapse__footer {
+  display: flex;
+  gap: 1rem;
+}
+
+.sidebar-collapse__icon {
+  transition: transform 0.2s ease-in-out;
+
+}
+
+.sidebar-collapse[open] .sidebar-collapse__icon {
+  transform: rotate(180deg);
+}
+
+.sidebar-collapse[open] .sidebar-collapse__button {
+  background: var(--blue-500);
+}
+
+.sidebar-collapse[open] .sidebar-collapse__button:hover, .sidebar-collapse__button:hover {
+  background: var(--gray-200);
+  color: var(--blue-800);
+}

@@ -1,0 +1,12 @@
+.sidebar {
+  width: 24rem;
+  padding: 1.5rem;
+  background: var(--blue-800);
+  box-sizing: border-box;
+}
+
+.sidebar__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

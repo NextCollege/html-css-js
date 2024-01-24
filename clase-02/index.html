@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <!-- Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="layout__header"></header>
+      <aside class="layout__sidebar sidebar">
+        <nav class="sidebar__navigation">
+          <a href="#" class="sidebar-item">
+            <i class="material-symbols-outlined sidebar-item__icon">
+              grid_view
+            </i>
+            <span>Dashboard</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="material-symbols-outlined sidebar-item__icon"> person </i>
+            <span>User</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="material-symbols-outlined sidebar-item__icon">
+              pie_chart
+            </i>
+            <span>Analytics</span>
+          </a>
+        </nav>
+        <hr class="sidebar-divider" />
+        <details class="sidebar-collapse">
+          <summary class="sidebar-item sidebar-collapse__button">
+            <span class="sidebar-collapse__title">
+              <i class="material-symbols-outlined sidebar-item__icon">
+                layers
+              </i>
+              <span> Land Resources </span>
+            </span>
+            <i class="material-symbols-outlined sidebar-collapse__icon">
+              <span class="material-symbols-outlined"> expand_more </span>
+            </i>
+          </summary>
+          <div class="sidebar-collapse__content">
+            <div class="collapse-card">
+              <div class="layer-config-layout">
+                <div class="layer-config-layout__preview layer-config__preview">
+                  <img src="./assets/images/layer.jpg" alt="Capa para mapa" />
+                </div>
+                <div class="layer-config-layout__content">
+                  <h3 class="layer-config__title">Provincial Boundaries</h3>
+                  <p class="layer-config__description">
+                    Administrative provinces of Afghanistan
+                  </p>
+                </div>
+                <div class="layer-config-layout__footer layer-config__footer">
+                  <div class="layer-opacity">
+                    <label for="opacity">Opacity</label>
+                    <input id="opacity" type="range" value="100" />
+                  </div>
+                  <button class="button button--ghost button--red">
+                    Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-collapse__footer">
+            <button class="button">Add layer</button>
+            <button class="button button--ghost button--red">Remove all</button>
+          </div>
+        </details>
+        <div class="sidebar-footer">footer</div>
+      </aside>
+      <main class="layout__main">
+        <div id="map" class="map"></div>
+      </main>
+    </div>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
