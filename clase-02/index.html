@@ -53,41 +53,27 @@
               <span class="material-symbols-outlined"> expand_more </span>
             </i>
           </summary>
-          <div class="sidebar-collapse__content">
-            <div class="collapse-card">
-              <div class="layer-config-layout">
-                <div class="layer-config-layout__preview layer-config__preview">
-                  <img src="./assets/images/layer.jpg" alt="Capa para mapa" />
-                </div>
-                <div class="layer-config-layout__content">
-                  <h3 class="layer-config__title">Provincial Boundaries</h3>
-                  <p class="layer-config__description">
-                    Administrative provinces of Afghanistan
-                  </p>
-                </div>
-                <div class="layer-config-layout__footer layer-config__footer">
-                  <div class="layer-opacity">
-                    <label for="opacity">Opacity</label>
-                    <input id="opacity" type="range" value="100" />
-                  </div>
-                  <button class="button button--ghost button--red">
-                    Remove
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div id="sidebar-layers" class="sidebar-collapse__content"></div>
           <div class="sidebar-collapse__footer">
-            <button class="button">Add layer</button>
-            <button class="button button--ghost button--red">Remove all</button>
+            <button data-type="open-modal" class="button">Add layer</button>
+            <button
+              id="remove-all-layers"
+              class="button button--ghost button--red"
+            >
+              Remove all
+            </button>
           </div>
         </details>
-        <div class="sidebar-footer">footer</div>
       </aside>
       <main class="layout__main">
         <div id="map" class="map"></div>
       </main>
     </div>
+    <dialog class="modal" id="modal">
+      <div class="modal__content">
+        <div id="modal-layers" class="modal-layers-layout"></div>
+      </div>
+    </dialog>
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="

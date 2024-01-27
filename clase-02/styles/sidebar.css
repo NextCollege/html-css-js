@@ -3,6 +3,7 @@
   padding: 1.5rem;
   background: var(--blue-800);
   box-sizing: border-box;
+  overflow: auto;
 }
 
 .sidebar__navigation {

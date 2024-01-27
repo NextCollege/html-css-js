@@ -10,4 +10,7 @@
 @import './collapse-card.css';
 @import './sidebar-footer.css';
 @import './sidebar-divider.css';
+@import './modal.css';
+@import './modal-layers-layout.css';
+@import './modal-layer.css';
 @import './map.css';

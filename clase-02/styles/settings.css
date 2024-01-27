@@ -1,7 +1,9 @@
 :root {
+  --white: #fff;
   --red-600: #f85959;
   --gray-100: #f7f7f7;
   --gray-200: #e0e0e0;
+  --blue-200: #3f66a0;
   --blue-300: #2c285f;
   --blue-400: #272446;
   --blue-500: #1D1B31;
@@ -11,4 +13,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
+}
+
+img {
+  vertical-align: middle;
 }
