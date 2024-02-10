@@ -1,0 +1,34 @@
+.sidebar-collapse {
+  color: white;
+}
+
+.sidebar-collapse__button {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.sidebar-collapse__title {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sidebar-collapse__content {
+  padding: 1rem
+}
+
+.sidebar-collapse__icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.sidebar-collapse[open] .sidebar-collapse__icon {
+  transform: rotate(180deg);
+}
+
+.sidebar-collapse[open] .sidebar-collapse__button {
+  background: var(--blue-500);
+}
+
+.sidebar-collapse[open] .sidebar-collapse__button:hover {
+  background: var(--gray-200);
+}

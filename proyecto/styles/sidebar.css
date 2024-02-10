@@ -1,0 +1,18 @@
+.sidebar {
+  width: 22rem;
+  background: var(--blue-800);
+  padding: 1.5rem;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.sidebar__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar__divider {
+  border-color: var(--gray-200);
+  margin: 1rem 0;
+}

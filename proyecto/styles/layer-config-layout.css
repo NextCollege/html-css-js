@@ -1,0 +1,21 @@
+.layer-config-layout {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: 6.25rem 1fr;
+  grid-template-areas:
+    "preview content"
+    "footer footer";
+  gap: 1rem;
+}
+
+.layer-config-layout__preview {
+  grid-area: preview;
+}
+
+.layer-config-layout__content {
+  grid-area: content;
+}
+
+.layer-config-layout__footer {
+  grid-area: footer;
+}

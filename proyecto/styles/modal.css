@@ -1,0 +1,18 @@
+.modal {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.modal__content {
+  width: 20rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: var(--white);
+}

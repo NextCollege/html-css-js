@@ -1,0 +1,35 @@
+.layer-config {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--blue-400);
+}
+
+.layer-config__preview {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.layer-config__preview img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.layer-config__title, .layer-config__descripcion {
+  margin: 0;
+}
+
+.layer-config__title {
+  margin-bottom: 0.5rem;
+}
+
+.layer-config__descripcion {
+  font-size: 0.875rem;
+  color: var(--gray-400);
+}
+
+.layer-config__footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
